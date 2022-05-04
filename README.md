@@ -2,6 +2,8 @@
 #### Based off of the MIPS ISA
 
 ---
+![Processor Diagram](/processor_diagram.png)
+---
 
 ## 🚀 How to run the program
 1. First install the necessary libraries
