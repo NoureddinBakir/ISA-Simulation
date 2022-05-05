@@ -33,13 +33,13 @@
 * sub
   * `R sub R1, R2, R3`
 * lw
-  * `R lw R1, M2, Zero` # Zero is a placeholder
+  * `R lw R1, M2, R14` # R14 is a placeholder
 * sw
-  * `R lw M1, R2, Zero` # Zero is a placeholder
+  * `R sw M1, R2, R14` # R14 is a placeholder
 * and
   * `R and R1, R2, R3` # R1 = R2 & R3
 * or
-  * `R or M1, R2, Zero` # R1 = R2 | R3
+  * `R or M1, R2, R15` # R1 = R2 | R3
 * beq
   * `R beq R16, R2, R3` # R1 = 0 if (R2 == R3) else 1
 
@@ -66,10 +66,15 @@ for(i=0; i<1024; i++){
 First, we store any values we want within Data memory, treating it as the array A by using
 
 ```
-I lw M(1-16), (value)
+I sw M(1-16), (value)
 ```
+* `Assume array of [5,5,5,5,5,5]`
 
-Then we use R15 as the 'stack pointer' but it instead points to the value of the memory element
+Initiate the loop:
+```
+LOOP
+```
+Then we use R15 as the 'stack pointer' but it instead points to the value of the memory element location
 
 ```
 I add R15, 1
@@ -78,14 +83,18 @@ I add R15, 1
 Then we load each value of M(1-16) into R2
 
 ```
-R lw R2, M(1-16), Zero
+R lw R2, M(1-16), R14
 ```
 
-Add the value of M(1-16) to R1
+Add the value of R2 to R1
 
 ```
 R add R1, R1, R2
 ```
+Ende the loop
 
-### You can manually loop through M(1-16) and add each value to R1, as the sum
-### Due to time constraint, we were not able to complete demo, functionality of the ISA remains!
+```
+END LOOP
+```
+
+` ! Manually iterate loop `

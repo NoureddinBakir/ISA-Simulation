@@ -1,0 +1,10 @@
+I sw M1, 5
+I sw M2, 5
+I sw M3, 5
+I sw M4, 5
+I sw M5, 5
+LOOP
+I add R15, 1
+R lw R2, M1, R14
+R add R1, R1, R2
+END LOOP

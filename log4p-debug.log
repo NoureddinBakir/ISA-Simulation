@@ -1,0 +1,20 @@
+2022-05-05 01:21:40,862 DEBUG main.py line+55 <module> [MainThread]: Instruction: I sw M1, 5
+2022-05-05 01:21:44,197 DEBUG main.py line+55 <module> [MainThread]: Instruction: I sw M2, 5
+2022-05-05 01:21:46,466 DEBUG main.py line+55 <module> [MainThread]: Instruction: I sw M3, 5
+2022-05-05 01:21:48,802 DEBUG main.py line+55 <module> [MainThread]: Instruction: I sw M4, 5
+2022-05-05 01:21:51,285 DEBUG main.py line+55 <module> [MainThread]: Instruction: I sw M5, 5
+2022-05-05 01:21:57,051 DEBUG main.py line+55 <module> [MainThread]: Instruction: I add R15, 1
+2022-05-05 01:21:59,810 DEBUG main.py line+55 <module> [MainThread]: Instruction: R lw R2, M1, R14
+2022-05-05 01:22:02,583 DEBUG main.py line+55 <module> [MainThread]: Instruction: R add R1, R1, R2
+2022-05-05 01:22:06,916 DEBUG main.py line+32 <module> [MainThread]: Instruction: I add R15, 1
+2022-05-05 01:22:06,917 DEBUG main.py line+32 <module> [MainThread]: Instruction: R lw R2, M1, R14
+2022-05-05 01:22:06,917 DEBUG main.py line+32 <module> [MainThread]: Instruction: R add R1, R1, R2
+2022-05-05 01:22:09,681 DEBUG main.py line+32 <module> [MainThread]: Instruction: I add R15, 1
+2022-05-05 01:22:09,682 DEBUG main.py line+32 <module> [MainThread]: Instruction: R lw R2, M1, R14
+2022-05-05 01:22:09,682 DEBUG main.py line+32 <module> [MainThread]: Instruction: R add R1, R1, R2
+2022-05-05 01:22:10,887 DEBUG main.py line+32 <module> [MainThread]: Instruction: I add R15, 1
+2022-05-05 01:22:10,888 DEBUG main.py line+32 <module> [MainThread]: Instruction: R lw R2, M1, R14
+2022-05-05 01:22:10,888 DEBUG main.py line+32 <module> [MainThread]: Instruction: R add R1, R1, R2
+2022-05-05 01:22:11,802 DEBUG main.py line+32 <module> [MainThread]: Instruction: I add R15, 1
+2022-05-05 01:22:11,802 DEBUG main.py line+32 <module> [MainThread]: Instruction: R lw R2, M1, R14
+2022-05-05 01:22:11,803 DEBUG main.py line+32 <module> [MainThread]: Instruction: R add R1, R1, R2
